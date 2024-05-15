@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Voici un exemple de description">
+    <title>TP 01 : Vente de Voitures</title>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <h1>TP 01 : Vente de Voitures</h1>
+    <nav>
+        <ul>
+            <li><a href="#used-vehicles">Véhicules d'occasion</a></li>
+            <li><a href="#new-vehicles">Véhicules neufs</a></li>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Section Véhicules d'occasion -->
+<section id="used-vehicles">
+    <h2>Véhicules d'occasion disponibles</h2>
+    <ul>
+        <!-- Liste des véhicules d'occasion -->
+        <li>Véhicule 1 : Audi A4 V avant phase 3 à 22 990€ ou 322 €/mois</li>
+        <li>Véhicule 2 : Audi A3 III sportback phase 2 à 22 990€ ou 322€/mois</li>
+        <li>Véhicule 3 : Ferrari 488 GTB à 229 000€</li>
+        <li>Véhicule 4 : Alpine A110 II à 74 490€</li>
+    </ul>
+</section>
+
+<!-- Section Véhicules neufs -->
+<section id="new-vehicles">
+    <h2>Véhicules neufs disponibles</h2>
+    <ul>
+        <!-- Liste des véhicules neufs -->
+        <li>Véhicule 1 : Audi E-Tron GT à 121 990€</li>
+        <li>Véhicule 2 : Audi A5 Sportback (2e gene) à 63 710€ </li>
+        <li>Véhicule 3 : Alpine A110 (2e gene) à 82 990€</li>
+        <li>Véhicule 4 : Alpine A110 (2e gene) à 85 900€</li>
+    </ul>
+</section>
+
+<!-- Section Présentation -->
+<section id="presentation">
+    <h2>Présentation des véhicules</h2>
+    <!-- Présentation des véhicules -->
+    <div>
+        <img src="images/vehicle01.jpg" alt="Ferrari 458">
+        <p>Modèle: 458 Italia<br>
+            Marque: Ferrari <br>
+            Chevaux fiscaux: 49 CV<br>
+            Type: Essence</p>
+    </div>
+    <div>
+        <img src="images/vehicle02.jpg" alt="Alpine A110 San Remo">
+        <p>Modèle: A110 San Remo 73<br>
+            Marque: Alpine<br>
+            Chevaux fiscaux:  18 CV <br>
+            Type: Essence</p>
+    </div>
+    <div>
+        <img src="images/vehicle03.jpg" alt="McLaren 570S">
+        <p>Modèle: 570S<br>
+            Marque: McLaren<br>
+            Chevaux fiscaux:  48 CV<br>
+            Type: Essence</p>
+    </div>
+    <div>
+        <img src="images/vehicle04.jpg" alt="Koenigsegg Agera R 2013">
+        <p>Modèle: Agera R 2013<br>
+            Marque: Koenigsegg<br>
+            Chevaux fiscaux: 139 CV<br>
+            Type: Essence</p>
+    </div>
+    <div>
+        <img src="images/vehicle05.jpg" alt="Audi e-Tron GT">
+        <p>Modèle: e-tron GT quattro<br>
+            Marque: Audi<br>
+            Chevaux fiscaux: 10 CV<br>
+            Type: Électrique</p>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section id="contact">
+    <h2>Contactez-nous pour avoir un devis gratuit :</h2>
+    <form action="traitement_formulaire.php" method="post">
+        <!-- formulaire de contact -->
+        <div>
+            <label for="firstname">Nom* :</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div>
+            <label for="name">Prénom* :</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email* :</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Téléphone* :</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Envoyer">
+        </div>
+        <div>
+            <p>Champs obligatoires : *</p>
+        </div>
+    </form>
+</section>
+
+<!-- Tableau des ventes -->
+<section>
+    <h2>Tableau des ventes de 2024</h2>
+    <table>
+        <tr>
+            <th>Nombre de véhicule / Mois</th>
+            <th>Janvier</th>
+            <th>Février</th>
+            <th>Mars</th>
+            <th>Avril</th>
+        </tr>
+        <tr>
+            <td>Véhicules d'occasion</td>
+            <td>10</td>
+            <td>15</td>
+            <td>20</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Véhicules neufs</td>
+            <td>5</td>
+            <td>8</td>
+            <td>12</td>
+            <td>18</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Footer -->
+<footer>
+    <ul>
+        <li><a href="cgu.html">Conditions Générales d'Utilisation</a></li>
+        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</footer>
+</body>
+</html>
