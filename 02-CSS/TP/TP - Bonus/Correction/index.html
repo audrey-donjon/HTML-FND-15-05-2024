@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Voici un exemple de description">
+        <title>TP 02 bonus : Vente de Voitures</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav">
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#used-vehicles">Véhicules d'occasion</a></li>
+                    <li class="nav-item"><a href="#new-vehicles">Véhicules neufs</a></li>
+                    <li class="nav-item"><a href="#presentation">Présentation</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Section Véhicules d'occasion -->
+        <section id="used-vehicles" class="section">
+            <h2 class="section-title">Véhicules d'occasion disponibles</h2>
+            <ul class="vehicle-list">
+                <!-- Liste des véhicules d'occasion -->
+                <li class="vehicle-list-item">Véhicule 1 : Audi A4 V avant phase 3 à 22 990€ ou 322 €/mois</li>
+                <li class="vehicle-list-item">Véhicule 2 : Audi A3 III sportback phase 2 à 22 990€ ou 322€/mois</li>
+                <li class="vehicle-list-item">Véhicule 3 : Ferrari 488 GTB à 229 000€</li>
+                <li class="vehicle-list-item">Véhicule 4 : Alpine A110 II à 74 490€</li>
+            </ul>
+        </section>
+
+        <!-- Section Véhicules neufs -->
+        <section id="new-vehicles" class="section">
+            <h2 class="section-title">Véhicules neufs disponibles</h2>
+            <ul class="vehicle-list">
+                <!-- Liste des véhicules neufs -->
+                <li class="vehicle-list-item">Véhicule 1 : Audi E-Tron GT à 121 990€</li>
+                <li class="vehicle-list-item">Véhicule 2 : Audi A5 Sportback (2e gene) à 63 710€</li>
+                <li class="vehicle-list-item">Véhicule 3 : Alpine A110 (2e gene) à 82 990€</li>
+                <li class="vehicle-list-item">Véhicule 4 : Alpine A110 (2e gene) à 85 900€</li>
+            </ul>
+        </section>
+
+        <!-- Section Présentation -->
+        <section id="presentation" class="section">
+            <h2 class="section-title">Présentation des véhicules</h2>
+            <!-- Présentation des véhicules -->
+            <div class="vehicles">
+                <div class="vehicle">
+                    <img src="images/vehicle01.jpg" alt="Ferrari 458" class="vehicle-image">
+                    <p class="vehicle-info"><span class="bold-text">Modèle:</span> 458 Italia<br>
+                        <span class="bold-text">Marque:</span> Ferrari <br>
+                        <span class="bold-text">Chevaux fiscaux:</span> 49 CV<br>
+                        <span class="bold-text">Type:</span> Essence</p>
+                </div>
+                <div class="vehicle">
+                    <img src="images/vehicle02.jpg" alt="Alpine A110 San Remo" class="vehicle-image">
+                    <p class="vehicle-info"><span class="bold-text">Modèle:</span> A110 San Remo 73<br><span class="bold-text">Marque:</span> Alpine<br>
+                        <span class="bold-text">Chevaux fiscaux:</span>  18 CV <br>
+                        <span class="bold-text">Type:</span> Essence</p>
+                </div>
+                <div class="vehicle">
+                    <img src="images/vehicle03.jpg" alt="McLaren 570S" class="vehicle-image">
+                    <p class="vehicle-info"><span class="bold-text">Modèle:</span> 570S<br>
+                        <span class="bold-text">Marque:</span> McLaren<br>
+                        <span class="bold-text">Chevaux fiscaux:</span>  48 CV<br>
+                        <span class="bold-text">Type:</span> Essence</p>
+                </div>
+                <div class="vehicle">
+                    <img src="images/vehicle04.jpg" alt="Koenigsegg Agera R 2013" class="vehicle-image">
+                    <p class="vehicle-info"><span class="bold-text">Modèle:</span> Agera R 2013<br>
+                        <span class="bold-text">Marque:</span> Koenigsegg<br>
+                        <span class="bold-text">Chevaux fiscaux:</span> 139 CV<br>
+                        <span class="bold-text">Type:</span> Essence</p>
+                </div>
+                <div class="vehicle">
+                    <img src="images/vehicle05.jpg" alt="Audi e-Tron GT" class="vehicle-image">
+                    <p class="vehicle-info"><span class="bold-text">Modèle:</span> e-tron GT quattro<br>
+                        <span class="bold-text">Marque:</span> Audi<br>
+                        <span class="bold-text">Chevaux fiscaux:</span> 10 CV<br>
+                        <span class="bold-text">Type:</span> Électrique</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contactez-nous pour avoir un devis gratuit :</h2>
+            <form action="traitement_formulaire.php" method="post" >
+                <!-- formulaire de contact -->
+                <div class="contact-form-group">
+                    <label for="firstname" class="contact-form-label">Nom* :</label>
+                    <input type="text" id="firstname" name="firstname" class="contact-form-input" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="name" class="contact-form-label">Prénom* :</label>
+                    <input type="text" id="name" name="name" class="contact-form-input" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="email" class="contact-form-label">Email* :</label>
+                    <input type="email" id="email" name="email" class="contact-form-input" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="phone" class="contact-form-label">Téléphone* :</label>
+                    <input type="tel" id="phone" name="phone" class="contact-form-input" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="message" class="contact-form-label">Message :</label>
+                    <textarea id="message" name="message" class="contact-form-textarea"></textarea>
+                </div>
+                <div class="contact-form-group">
+                    <input type="submit" value="Envoyer" class="contact-form-submit">
+                </div>
+                <div class="contact-form-group">
+                    <p class="contact-form-info">Champs obligatoires : *</p>
+                </div>
+            </form>
+        </section>
+
+        <!-- Tableau des ventes -->
+        <section class="section">
+            <h2 class="section-title">Tableau des ventes de 2024</h2>
+            <div class="overflow-scroll">
+                <table class="sales-table">
+                    <tr>
+                        <th>Nombre de véhicule / Mois</th>
+                        <th>Janvier</th>
+                        <th>Février</th>
+                        <th>Mars</th>
+                        <th>Avril</th>
+                    </tr>
+                    <tr>
+                        <td>Véhicules d'occasion</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>20</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Véhicules neufs</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>18</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <nav class="nav">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="cgu.html">Conditions Générales d'Utilisation</a></li>
+                    <li class="footer-item"><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li class="footer-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
