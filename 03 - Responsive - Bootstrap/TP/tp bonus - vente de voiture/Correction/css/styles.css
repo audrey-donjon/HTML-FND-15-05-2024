@@ -1,0 +1,179 @@
+/* General Styles et Reset CSS*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.bold-text{
+    font-weight: bold;
+}
+.overflow-scroll{
+    overflow-x: scroll;
+}
+
+/* Header Styles et Footer styles*/
+.header, .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+header .nav ul, footer .nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+header .nav ul li, .footer .nav ul li{
+    margin-right: 20px;
+}
+
+header .nav ul li a, .footer .nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .nav ul li a:hover, .footer .nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    padding: 20px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+/* Vehicle List Styles */
+.vehicle-list-item {
+    margin-bottom: 10px;
+}
+
+/* Vehicle Presentation Styles */
+
+.vehicles{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vehicle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: #333 solid 2px;
+    max-width: 600px;
+}
+
+.vehicle p{
+    padding: 20px;
+}
+
+.vehicle-image {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.vehicle-info {
+    line-height: 1.6;
+}
+
+/* Contact Form Styles */
+.contact-form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-label {
+    margin-bottom: 5px;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.contact-form-submit {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+.contact-form-info {
+    font-style: italic;
+}
+
+/* Sales Table Styles */
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.sales-table th,
+.sales-table td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+@media screen and (min-width:700px){ /*pour format supérieur au mobile*/
+    /* Header Styles et Footer styles*/
+    .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        width: auto;
+        height: 60px;
+    }
+
+    header .nav ul, footer .nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Vehicle Presentation Styles */
+
+    .vehicle {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        border: #333 solid 2px;
+        max-width: 600px;
+    }
+
+    /* Contact Form Styles */
+    .contact-form-input,
+    .contact-form-textarea {
+    max-width: 900px;
+}
+}
